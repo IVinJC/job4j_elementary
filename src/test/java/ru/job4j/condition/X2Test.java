@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class X2Test {
-
     @Test
     public void whenA1B1C1X1Then40() {
         int a = 1;
@@ -26,7 +25,6 @@ public class X2Test {
         int rsl = X2.calc(a, b, c, x);
         assertEquals(expected, rsl);
     }
-
     @Test
     public void whenA1B1C0X1Then40() {
         int a = 1;
@@ -37,7 +35,6 @@ public class X2Test {
         int rsl = X2.calc(a, b, c, x);
         assertEquals(expected, rsl);
     }
-
     @Test
     public void whenA1B1C1X0Then40() {
         int a = 1;
