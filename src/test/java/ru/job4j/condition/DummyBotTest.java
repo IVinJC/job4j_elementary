@@ -8,13 +8,13 @@ public class DummyBotTest {
     public void whenGreetBot() {
         String in = "Привет, Бот.";
         String result = DummyBot.answer(in);
-        String expected = "Привет, умник.";
+        String expected = "Привет умник";
         Assert.assertEquals(expected, result);
     }
 
     @Test
     public void whenByeBot() {
-        String in = "Пока.";
+        String in = "Пока";
         String result = DummyBot.answer(in);
         String expected = "До скорой встречи.";
         Assert.assertEquals(expected, result);
