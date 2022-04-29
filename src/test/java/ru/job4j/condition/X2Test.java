@@ -2,9 +2,10 @@ package ru.job4j.condition;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
 
 public class X2Test {
+
     @Test
     public void whenA1B1C1X1Then40() {
         int a = 1;
@@ -13,8 +14,9 @@ public class X2Test {
         int x = 1;
         int expected = 30;
         int rsl = X2.calc(a, b, c, x);
-        assertEquals(expected, rsl);
+        Assert.assertEquals(expected, rsl);
     }
+
     @Test
     public void whenA0B1C1X1Then40() {
         int a = 0;
@@ -23,8 +25,9 @@ public class X2Test {
         int x = 1;
         int expected = 10;
         int rsl = X2.calc(a, b, c, x);
-        assertEquals(expected, rsl);
+        Assert.assertEquals(expected, rsl);
     }
+
     @Test
     public void whenA1B1C0X1Then40() {
         int a = 1;
@@ -33,8 +36,9 @@ public class X2Test {
         int x = 1;
         int expected = 15;
         int rsl = X2.calc(a, b, c, x);
-        assertEquals(expected, rsl);
+        Assert.assertEquals(expected, rsl);
     }
+
     @Test
     public void whenA1B1C1X0Then40() {
         int a = 1;
@@ -43,6 +47,6 @@ public class X2Test {
         int x = 0;
         int expected = 5;
         int rsl = X2.calc(a, b, c, x);
-        assertEquals(expected, rsl);
+        Assert.assertEquals(expected, rsl);
     }
 }
