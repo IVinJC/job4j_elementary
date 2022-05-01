@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PrimeNumberTest {
+
     @Test
     public void when5() {
         int finish = 5;
