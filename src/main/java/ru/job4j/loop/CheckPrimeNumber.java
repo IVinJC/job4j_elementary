@@ -1,6 +1,7 @@
 package ru.job4j.loop;
 
 public class CheckPrimeNumber {
+
     public static boolean check(int number) {
         if (number < 2) {
             return false;

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CheckPrimeNumberTest {
+
     @Test
     public void when5() {
         int number = 5;
