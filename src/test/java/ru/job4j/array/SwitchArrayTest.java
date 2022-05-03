@@ -17,20 +17,20 @@ public class SwitchArrayTest {
     @Test
     public void whenSwap0to4() {
         int[] input = {1, 2, 3, 4, 5};
-        int source = 0;
-        int dest = input.length - 1;
+        int source = 2;
+        int dest = 3;
         int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {5, 2, 3, 4, 1};
+        int[] expected = {1, 2, 4, 3, 5};
         Assert.assertArrayEquals(expected, result);
     }
 
     @Test
     public void whenSwap0to5() {
         int[] input = {10, 2, 3, 4, 5, 8};
-        int source = 0;
-        int dest = input.length - 1;
+        int source = 1;
+        int dest = 3;
         int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {8, 2, 3, 4, 5, 10};
+        int[] expected = {10, 4, 3, 2, 5, 8};
         Assert.assertArrayEquals(expected, result);
     }
 }
