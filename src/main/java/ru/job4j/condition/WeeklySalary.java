@@ -17,7 +17,6 @@ public class WeeklySalary {
                 earn += hours[j] * 20;
             }
         }
-
         return earn;
     }
 }
