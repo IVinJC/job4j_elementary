@@ -13,10 +13,16 @@ public class Library {
         books[2] = book3;
         books[3] = book4;
         for (int i = 0; i < books.length; i++) {
-            Book bk = books[3];
-            books[3] = books[0];
-            books[0] = bk;
+            System.out.println(books[i]);
         }
+        System.out.println();
+        Book bk = books[3];
+        books[3] = books[0];
+        books[0] = bk;
+        for (int i = 0; i < books.length; i++) {
+            System.out.println(books[i]);
+        }
+        System.out.println();
         for (int i = 0; i < books.length; i++) {
             if ("Clean code".equals(books[i].getName())) {
                 System.out.println(books[i].getName());
