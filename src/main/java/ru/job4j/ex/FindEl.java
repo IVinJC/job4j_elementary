@@ -2,15 +2,18 @@ package ru.job4j.ex;
 
 public class FindEl {
     public static int indexOf(String[] value, String key) throws ElementNotFoundException {
-        if (key == null) {
-            throw new ElementNotFoundException("Element " + key + "should not be null");
-        }
         int rsl = -1;
-        /* цикл fori, поскольку нам надо найти индекс искомого элемента в массиве */
+        if (key == null) {
+            throw new ElementNotFoundException("Element " + key + " should not be null");
+        }
         for (int i = 0; i < value.length; i++) {
             if (key.equals(value[i])) {
                 rsl = i;
+                break;
             }
+        }
+        if (rsl == -1) {
+            throw new ElementNotFoundException("Element " + key + " has not found");
         }
         return rsl;
     }
